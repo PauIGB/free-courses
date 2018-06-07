@@ -14,12 +14,10 @@ if (1 <= t1 && t2 <= 100000) {
     m = m - 60 * h;
     arr.push(h + " " + decNum(h, ['час', 'часа', 'часов']));
   }
-  if (m > 0)
-  {
+  if (m > 0) {
     arr.push(m + " " + decNum(m, ['минута', 'минуты', 'минут']));
   }
-  if (s > 0)
-  {
+  if (s > 0) {
     arr.push(s + " " + decNum(s, ['секунда', 'секунды', 'секунд']));
   }
   process.stdout.write(arr.join(" ") + '\n');
